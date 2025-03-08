@@ -3,7 +3,7 @@ resource "cloudflare_zone_settings_override" "this" {
   zone_id = var.zone_id
   settings {
     always_use_https            = "on"
-    browser_cache_ttl           = 0
+    browser_cache_ttl           = 14400
     browser_check               = "on"
     http2                       = "on"
     h2_prioritization           = "off"
